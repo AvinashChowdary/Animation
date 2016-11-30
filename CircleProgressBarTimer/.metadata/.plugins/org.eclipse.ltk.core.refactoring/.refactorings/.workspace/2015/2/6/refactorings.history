@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Delete resource &apos;appcompat-v7-21.0.3.aar_FILES&apos;" deleteContents="true" description="Delete resource &apos;appcompat-v7-21.0.3.aar_FILES&apos;" element1="/appcompat-v7-21.0.3.aar_FILES" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1423118030109"/>
-</session>
