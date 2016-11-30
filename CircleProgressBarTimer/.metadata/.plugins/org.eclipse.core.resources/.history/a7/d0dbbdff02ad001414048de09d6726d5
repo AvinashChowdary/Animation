@@ -1,0 +1,40 @@
+package com.example.usingcircletimer;
+
+import com.cardinalsolutions.android.arch.autowire.AndroidView;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.ProgressBar;
+
+
+public class MainActivity extends Activity {
+
+	@AndroidView(R.id.circle_progress_bar)
+	private ProgressBar mProgressBar;
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+		
+		Button btn = (Button) findViewById(R.id.btn);
+		btn.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				new Thread(new Runnable() {
+					
+					@Override
+					public void run() {
+						while(mProgressBar.getProgress()<100){
+							int progress = mProgressBar.getProgress()+10;
+							mProgressBar.setProgress(progress);
+						}
+					}
+				});
+			}
+		});
+	}
+}
