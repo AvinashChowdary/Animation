@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">fireworks</string>
+    <string name="rocket">Rocket</string>
+    <string name="menu_settings">settings</string>
+    <string name="detectGravity">Detect Gravity</string>
+    <string name="playSounds">Play Sounds</string>
+    <string name="adjustFrequency">Adjust Frequency</string>
+    <string name="automaticFireworks">Automatic Fireworks</string>
+    <string name="menuSettings">Settings</string>
+    <string name="menuSettingsSave">Save</string>
+    <string name="menuSettingsCancel">Cancel</string>
+</resources>
